@@ -1,0 +1,5 @@
+package com.example.flutterimagelabeling_ml
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity : FlutterActivity()
