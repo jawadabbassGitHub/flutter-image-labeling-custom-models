@@ -19,3 +19,38 @@ Run the following command to install required packages:
 
 ```sh
 flutter pub add image_picker google_mlkit_image_labeling path_provider path
+
+🚀 Running the App
+For Android Emulator or Device
+Make sure you have Android Studio installed with an emulator or a physical device connected.
+
+Run:
+
+flutter run
+
+For iOS Emulator
+Install CocoaPods dependencies:
+cd ios
+pod install
+cd ..
+Open the project in Xcode and set up an iOS simulator.
+Run:
+flutter run
+📝 Notes
+Ensure that your Android device/emulator has Google Play Services.
+On iOS, add the required permissions in ios/Runner/Info.plist:
+
+<key>NSCameraUsageDescription</key>
+<string>We need camera access for image recognition</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>We need gallery access for image selection</string>
+
+📸 Features
+Pick images from Gallery or Camera.
+
+Detect objects using Google ML Kit.
+
+Display labels with confidence scores.
+
+Modern UI with smooth animations.
+
